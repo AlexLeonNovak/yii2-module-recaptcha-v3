@@ -1,4 +1,8 @@
-[![Total Downloads](https://img.shields.io/packagist/dt/kekaadrenalin/yii2-module-recaptcha-v3.svg?style=flat-square)](https://packagist.org/packages/kekaadrenalin/yii2-module-recaptcha-v3) 
+[![Total Downloads](https://img.shields.io/packagist/dt/alexleonnovak/yii2-module-recaptcha-v3.svg?style=flat-square)](https://packagist.org/packages/alexleonnovak/yii2-module-recaptcha-v3) 
+
+Note
+----
+This is fork from [kekaadrenalin/yii2-module-recaptcha-v3](https://github.com/kekaadrenalin/yii2-module-recaptcha-v3)
 
 Yii2 reCAPTCHA v3
 =================
@@ -12,13 +16,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist kekaadrenalin/yii2-module-recaptcha-v3 "*"
+php composer.phar require --prefer-dist alexleonnovak/yii2-module-recaptcha-v3 "*"
 ```
 
 or add
 
 ```
-"kekaadrenalin/yii2-module-recaptcha-v3": "*"
+"alexleonnovak/yii2-module-recaptcha-v3": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -35,7 +39,7 @@ add this to your components main.php
 'components' => [
     ...
     'reCaptcha3' => [
-        'class'      => 'kekaadrenalin\recaptcha3\ReCaptcha',
+        'class'      => 'alexleonnovak\recaptcha3\ReCaptcha',
         'site_key'   => 'site_key_###',
         'secret_key' => 'secret_key_###',
     ],
@@ -53,13 +57,13 @@ public function rules()
 {
  	return [
  		...
- 		 [['reCaptcha'], \kekaadrenalin\recaptcha3\ReCaptchaValidator::className(), 'acceptance_score' => 0]
+ 		 [['reCaptcha'], \alexleonnovak\recaptcha3\ReCaptchaValidator::className(), 'acceptance_score' => 0]
  	];
 }
 ```
 
 ```php
-<?= $form->field($model, 'reCaptcha')->widget(\kekaadrenalin\recaptcha3\ReCaptchaWidget::class) ?>
+<?= $form->field($model, 'reCaptcha')->widget(\alexleonnovak\recaptcha3\ReCaptchaWidget::class) ?>
 ```
 
 For tests

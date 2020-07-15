@@ -1,6 +1,6 @@
 {
-    "name": "kekaadrenalin/yii2-module-recaptcha-v3",
-    "description": "This is reCAPTCHA v3 for Yii2.",
+    "name": "alexleonnovak/yii2-module-recaptcha-v3",
+    "description": "This is reCAPTCHA v3 for Yii2. Fork from kekaadrenalin/yii2-module-recaptcha-v3",
     "type": "yii2-extension",
     "keywords": ["yii2","module","recaptcha v3","captcha","recaptcha 3","Yii2 recaptcha","Yii2 recaptcha 3","Yii2 recaptcha v3"],
     "license": "BSD-3-Clause",
@@ -10,8 +10,8 @@
     },
     "authors": [
         {
-            "name": "kekaadrenalin",
-            "email": "kekapor@outlook.com"
+            "name": "alexleonnovak",
+            "email": "alexleonnovak@gmail.com"
         }
     ],
     "minimum-stability": "stable",
@@ -27,7 +27,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "kekaadrenalin\\recaptcha3\\": "src"
+            "alexleonnovak\\recaptcha3\\": "src"
         }
     }
 }
